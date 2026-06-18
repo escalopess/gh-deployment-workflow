@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'index.html'
+      - 'public/index.html'
 
 permissions:
   contents: read
@@ -23,12 +23,14 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v4
 
-      - name: Subir artefacto
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './index.html'
-          overwrite: true
+          path: 'public'
 
-      - name: Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
