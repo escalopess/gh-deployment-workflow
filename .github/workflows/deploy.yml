@@ -23,10 +23,16 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v4
 
+      - name: Cleanup old artifacts
+        uses: geekyeggo/delete-artifact@v2
+        continue-on-error: true
+        with:
+          name: github-pages
+
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './index.html'
 
       - name: Desplegar en GitHub Pages
         id: deployment
