@@ -2,6 +2,10 @@
 
 El objetivo principal es poner en práctica los conceptos de Integración y Despliegue Continuo (CI/CD).
 
+**Este proyecto es la solución a:** 🔗 [Roadmap.sh - GitHub Actions Deployment Workflow](https://roadmap.sh/projects/github-actions-deployment-workflow)
+
+---
+
 ## 🚀 Sobre el Proyecto
 
 Este proyecto despliega automáticamente una página web en GitHub Pages cada vez que hay cambios en el archivo `public/index.html`.
@@ -125,7 +129,7 @@ Ve a la sección **Actions** de tu repositorio para:
 - Revisar logs detallados si algo falla
 - Ejecutar manualmente el workflow si lo necesitas
 
-URL: https://github.com/escalopess/gh-deployment-workflow/actions/workflows/deploy.yml
+🔗 **URL del Workflow:** https://github.com/escalopess/gh-deployment-workflow/actions/workflows/deploy.yml
 
 ---
 
